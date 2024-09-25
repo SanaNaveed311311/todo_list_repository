@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To DO List</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <div class="container">
@@ -12,37 +13,6 @@
         <button onclick="addtask()">ADD YOUR TASK</button>
         <ul id="taskList"></ul>
      </div>
-<script>
-    
-function addtask() {
-    var taskInput = document.getElementById("taskInput");
-    var taskList = document.getElementById("taskList");
-
-    //empty task handling
-    if(!taskInput.value){
-        return alert {""}
-    }
-
-    //create the new list item in todo list
-    var list = document.createElement("list");
-    list.textContent = taskInput.value;
-
-    
-
-    //Now create the REMOVE button in todo list
-    var remove.button = document.createElement("button");
-    removebutton.textContent = "REMOVE";
-    removebutton.className = "remove-btn";
-    removebutton.oneclick = function () {
-        taskList.removeChild(list);
-    }
-
-
-}
-
-</script>
-
-</body>
-<link rel="stylesheet" href="style.css">
 <script src="./script.js"></script>
+</body>
 </html>

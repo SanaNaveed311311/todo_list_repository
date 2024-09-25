@@ -1,9 +1,45 @@
-h1{
-    color: purple;
-}
 
 /*body styling*/
 body{
     font-family: 'Arial', sans-serif;
     background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: o;
 }
+ /*container*/
+ .container{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 10px 25px rgb(0,0,0.3);
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+ }
+
+ /*title styling*/
+ h1{
+    color: black ;
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: 1000px;
+ }
+
+/*input field styling*/
+#taskInput {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid purple;
+    border-radius: 10px;
+    margin-bottom: 11px;
+    outline: 20px;
+    transition: border 0.2s;
+}
+
+#taskInput:focus{
+border-color: blueviolet;
+}
+/**/
