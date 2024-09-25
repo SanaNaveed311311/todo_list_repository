@@ -7,13 +7,15 @@ function addtask() {
     var list = document.createElement("list");
     list.textContent = taskInput.value;
 
-    
-
+    /*handling empty task*/
+    if(!taskInput.value){
+        return alert("you can make an empty list (SORRY)");
+    }
     //Now create the REMOVE button in todo list
     var removebutton = document.createElement("button");
     removebutton.textContent = "REMOVE";
     removebutton.className = "remove-btn";
-    removebutton.oneclick = function () {
+    removebutton.onclick = function () {
         taskList.removeChild(list);
     };
 
