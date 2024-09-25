@@ -2,3 +2,8 @@ h1{
     color: purple;
 }
 
+/*body styling*/
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: blueviolet;
+}

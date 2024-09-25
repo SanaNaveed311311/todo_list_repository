@@ -6,7 +6,7 @@ function addtask() {
     //empty task handling
     if(!taskInput.value){
         return alert {""}
-    }
+    };
 
     //create the new list item in todo list
     var list = document.createElement("list");
@@ -20,7 +20,19 @@ function addtask() {
     removebutton.className = "remove-btn";
     removebutton.oneclick = function () {
         taskList.removeChild(list);
-    }
+    };
 
+    //adding click event to mark as completed
+    list.oneclick = function () {
+        list.classList.toggle("compeleted");
+    };
 
-}
+    // Append the remove button to the list item
+    list.appendChild(removebutton);
+
+    //Apend the list item to the task list
+    taskList.appendChild(list);
+
+    //clearing the input field
+    taskInput.value = '';
+};
