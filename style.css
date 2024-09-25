@@ -1,3 +1,7 @@
+h1{
+    color: blueviolet;
+}
+
 
 /*body styling*/
 body{
@@ -40,7 +44,7 @@ body{
 }
 
 #taskInput:focus{
-border-color: blueviolet;
+    border-color: blueviolet;
 }
 /*button style*/
 button {
@@ -60,11 +64,11 @@ button:hover {
 
 /*task list styling*/
 ul {
-list-style-type:none;
-padding: 0%;
-max-height: 200px;
-overflow-y: auto;
-margin-bottom: 10px;
+    list-style-type:none;
+    padding: 0%;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
 }
 
 list {
@@ -97,7 +101,7 @@ list:hover {
     color: white;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 8px;
 }
 
 .remove-btn:hover {
